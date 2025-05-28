@@ -3,12 +3,12 @@
 # Exit if no argument
 exit if ARGV.empty?
 
-# Input string
+# Input
 input = ARGV[0]
 
-# Regex pattern: h + 1 or 2 b's + t + n
-pattern = /^hb{1,2}tn$/
+# Match pattern: 0 to 4 b's between h and t
+pattern = /^hb{0,4}tn$/
 
-# Print only if input matches
+# Print if match
 puts input if input.match?(pattern)
 
